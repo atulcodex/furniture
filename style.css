@@ -1,0 +1,406 @@
+/*-------------- Google fonts ---------------*/
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=PT+Serif:wght@400;700&display=swap');
+
+:root
+{
+    /*-------- font-family --------*/
+    --heading-font: 'PT Serif', serif;
+    --para-font: 'Outfit', sans-serif;
+
+    /*-------- Colors ----------*/
+    --primary-color: #dd9d4c;            /*-- Light brown color ---*/
+    --secondary-color: #2d3436;          /*-- light black color --*/
+    --body-color: #f6f1ed;               /*-- Extra light pink color --*/
+    --white-color: #ffffff;
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html
+{
+    font-size: 16px;
+}
+
+body
+{
+    background-color: var(--body-color);
+}
+
+img
+{
+    max-width: 100%;
+    height: auto;
+}
+
+.heading
+{
+    font-size: 8.5vw;
+    font-family: var(--heading-font);
+    margin-bottom: 10px;
+}
+
+.para-line
+{
+    color: var(--secondary-color);
+    font-size: 5.5vw;
+    font-weight: 300;
+    font-family: var(--para-font);
+}
+
+.btn
+{
+    color: #ffffff;
+    background-color: var(--primary-color);
+    font-family: var(--para-font);
+    font-size: 1.3rem;
+    border: none;
+    outline: none;
+    padding: .7rem 3.2rem;
+    width: max-content;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.btn:hover
+{
+    transform: translate(10px);
+}
+
+/*----------- Header styling start ------------*/
+.header
+{
+    height: 100vh;
+    background-image: linear-gradient( rgba(0, 0, 0, 0.6), rgba(7, 4, 0, 0.2) ),url(img/furniture-hero-bg.jpg);
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+
+.header .container
+{
+    padding: 2rem 1rem;
+}
+
+.logo
+{
+    color: var(--white-color);
+    font-size: 1rem;
+    font-family: var(--para-font);
+    font-weight: 600;
+}
+
+.hero-content
+{
+    width: 100%;
+    height: 65vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.hero-content .main-heading
+{
+    color: var(--white-color);
+    font-size: 13vw;
+    font-weight: 300;
+    line-height: 1;
+    font-family: var(--heading-font);
+    margin-bottom: 2.8rem;
+}
+/*----------- Header styling ends ------------*/
+
+
+/*------------ Crafted section styling start --------------*/
+.craft .container
+{
+    padding: 3rem 1rem;
+}
+
+.craft .container .row
+{
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 20px;
+}
+/*------------ Crafted section styling end --------------*/
+
+
+/*------------ products section styling start -------------*/
+.products .container
+{
+    padding: 3rem 1rem;
+}
+
+.products .container .row
+{
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 40px;
+}
+
+.products .container .row .col
+{
+    width: 100%;
+}
+
+.product .product-img, 
+.product .name
+{
+    cursor: pointer;
+}
+
+.product .product-img
+{
+    width: 100%;
+}
+
+.product .name
+{
+    font-size: 7vw;
+    font-family: var(--para-font);
+    font-weight: 600;
+}
+/*------------ products section styling end -------------*/
+
+
+/*------------ Portfolio section styling start ----------*/
+.portfolios .container
+{
+    padding: 3rem 1rem;
+}
+
+.portfolios .container .row
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.portfolios .name
+{
+    font-size: 6vw;
+    font-weight: 500;
+    font-family: var(--para-font);
+}
+/*------------ Portfolio section styling end ----------*/
+
+
+/*------------ Footer section styling start ----------*/
+.footer
+{
+    background-image: linear-gradient( rgba(0, 0, 0, 0.6), rgba(7, 4, 0, 0.2) ),url(img/footer-bg-1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .container
+{
+    padding: 6rem 1rem;
+}
+
+.footer .container .heading
+{
+    color: #fff;
+}
+
+.footer .container .row
+{
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.footer .container .row .col
+{
+    width: 100%;
+}
+
+.footer-heading
+{
+    color: #fff;
+    font-size: 6vw;
+    font-family: var(--heading-font);
+}
+
+.white
+{
+    color: #ffffff;
+}
+/*------------ Footer section styling end ----------*/
+
+
+
+
+
+/*----------------------------------------------------------*/
+/*-------------------- Desktop size styling ----------------*/
+/*----------------------------------------------------------*/
+@media screen and (min-width: 768px)
+{
+    .heading
+    {
+        font-size: 3.6vw;
+    }
+
+    .para-line
+    {
+        font-size: 1.6vw;
+        font-weight: 300;
+        font-family: var(--para-font);
+    }
+
+    /*------ header styling start -------*/
+    .header .container
+    {
+        padding: 4.5rem 6rem;
+    }
+
+    .logo
+    {
+        font-size: 1.4rem;
+        line-height: 0.9;
+    }
+
+    .hero-content .main-heading
+    {
+        font-size: 7vw;
+    }
+    /*------ header styling end -------*/
+
+
+    /*------ craft styling start -------*/
+    .craft
+    {
+        height: 100vh;
+    }
+
+    .craft .container
+    {
+        padding: 5rem;
+    }
+
+    .craft .container .row
+    {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        gap: 5.5rem;
+    }
+
+    .craft .container .row .col
+    {
+        width: 100%;
+    }
+    /*------ craft styling end -------*/
+
+
+    /*------ products styling start -------*/
+    .products
+    {
+        height: 100vh;
+    }
+
+    .products .container
+    {
+        padding: 5rem;
+    }
+
+    .products .container .row
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: 30px;
+    }
+
+    .products .container .row .col .heading
+    {
+        font-size: 3vw;
+    }
+
+    .product
+    {
+        transition: .5s;
+    }
+
+    .product:hover
+    {
+        transform: translateY(-10px);
+    }
+
+    .product .name
+    {
+        font-size: 1.4vw;
+    }
+    /*------ products styling end -------*/
+
+
+    /*------ Portfolio styling start --------*/
+    .portfolios .container
+    {
+        padding: 5rem;
+    }
+
+    .portfolios .container .row
+    {
+        margin-top: 2rem;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 28px;
+    }
+
+    .portfolios .name
+    {
+        font-size: 1.6vw;
+    }
+
+    .portfolio-img
+    {
+        width: 100%;
+    }
+    /*------ Portfolio styling end --------*/
+
+
+    /*------ Footer styling start ---------- */
+    .footer
+    {
+        height: 100vh;
+        background-position: center center;
+    }
+
+    .footer .container
+    {        
+        padding: 5rem;
+        width: 100%;
+    }
+
+    .footer .container .row
+    {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .footer-heading
+    {
+        font-size: 1.2vw;
+    }
+
+    .white
+    {
+        font-size: 1.5vw;
+    }
+    /*------ Footer styling end ---------- */
+}
