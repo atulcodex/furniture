@@ -1,6 +1,6 @@
 ### Furniture single page website template
 
-{%youtube BoRB0kic5M0 %}
+{% youtube 6Az1D22fN6E %}
 
 Furniture – Single Product Shop HTML CSS Theme is an elegantly designed and versatile Product theme that gives you smartly optimized page layouts and sections so you can easily create a stunning Product store for a furniture product. It incorporates a clean and modern design to give your website a professional look in little to no time.
 
@@ -26,7 +26,7 @@ It was designed for any e-commerce stores and diversified commodities as furnitu
 .
 .
 
-[![Furniture single page website template](https://i.ibb.co/vwN8cgW/live-demo.png)](https://headphone-atulcodex.netlify.app/)
+[![Furniture single page website template](https://i.ibb.co/vwN8cgW/live-demo.png)](https://furniture-atulcodex.netlify.app/)
 
 .
 .
